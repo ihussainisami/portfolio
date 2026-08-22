@@ -254,11 +254,23 @@
         if (prefersReducedMotion) { typewriterText.textContent = roles[0]; } else { type(); }
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-        }, { threshold: 0.15 });
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.05, rootMargin: '0px 0px -40px 0px' });
         if (!prefersReducedMotion) {
-            document.querySelectorAll('.skill-card, .project-card, .cert-main, .contact-card, .hero-meta, .tag-group-list span')
-                .forEach((el, i) => { el.classList.add('fade-up'); el.style.transitionDelay = (i * 0.04) + 's'; observer.observe(el); });
+            // Delay only resets per-group (per parent container) instead of counting globally,
+            // and is capped so nothing ever waits more than 0.2s.
+            document.querySelectorAll('.skills-grid, .tag-group-list, .projects-grid, .contact-grid').forEach(group => {
+                group.querySelectorAll(':scope > *').forEach((el, i) => {
+                    el.classList.add('fade-up');
+                    el.style.transitionDelay = Math.min(i * 0.03, 0.2) + 's';
+                    observer.observe(el);
+                });
+            });
+            document.querySelectorAll('.cert-main, .hero-meta').forEach(el => {
+                el.classList.add('fade-up');
+                el.style.transitionDelay = '0s';
+                observer.observe(el);
+            });
             setTimeout(() => {
                 document.querySelectorAll('.fade-up').forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); });
             }, 100);
