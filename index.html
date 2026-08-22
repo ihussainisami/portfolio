@@ -81,9 +81,25 @@
                 <div class="skill-card"><div class="icon"><i class="fas fa-home"></i></div><h4>Real Estate Automation</h4><p>Automate property enquiries, answer common questions, collect key details, and support faster follow-up.</p></div>
                 <div class="skill-card"><div class="icon"><i class="fas fa-headset"></i></div><h4>Customer Support Automation</h4><p>Classify incoming requests, draft responses, and route issues to the right team.</p></div>
             </div>
-            <div class="tech-tags">
-                <span class="tag-highlight">n8n</span><span>Groq AI</span><span>Google Gemini</span><span>APIs</span><span>Webhooks</span>
-                <span>IMAP / Gmail</span><span>Slack</span><span>WhatsApp Business API</span><span>Airtable</span><span>Google Sheets</span><span>Google Calendar</span><span>Typeform</span>
+            <div class="tech-tags-grouped">
+                <div class="tag-group">
+                    <div class="tag-group-label">AI &amp; Automation</div>
+                    <div class="tag-group-list">
+                        <span class="tag-highlight">n8n</span><span>Groq AI</span><span>Google Gemini</span>
+                    </div>
+                </div>
+                <div class="tag-group">
+                    <div class="tag-group-label">Integrations</div>
+                    <div class="tag-group-list">
+                        <span>APIs</span><span>Webhooks</span><span>IMAP / Gmail</span><span>Slack</span><span>WhatsApp Business API</span>
+                    </div>
+                </div>
+                <div class="tag-group">
+                    <div class="tag-group-label">Data &amp; Forms</div>
+                    <div class="tag-group-list">
+                        <span>Airtable</span><span>Google Sheets</span><span>Google Calendar</span><span>Typeform</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -135,7 +151,7 @@
                     <div class="problem-label">The Problem</div>
                     <p>Sales teams waste hours manually triaging inbound leads. Every lead looks the same until someone reads it, causing valuable prospects to wait while low-intent inquiries get equal priority.</p>
                     <div class="impact-label">What It Does</div>
-                    <div class="impact-text">Eliminates manual sorting. Hot leads get immediate follow-up.</div>
+                    <div class="impact-text">Eliminates manual sorting — every lead arrives already classified and scored, so hot leads get immediate follow-up instead of waiting in a queue.</div>
                     <div class="ideal-for"><span class="label">Ideal for:</span><span class="pill">Sales Teams</span><span class="pill">Marketing Agencies</span><span class="pill">Real Estate</span></div>
                     <div class="project-actions">
                         <a href="case-studies/lead-segmentation.html" class="case-link"><i class="fas fa-book-open"></i> View Case Study</a>
@@ -160,7 +176,7 @@
                     <div class="problem-label">The Problem</div>
                     <p>Leads get lost in email inboxes or spreadsheets, causing missed opportunities. Manual data entry is error-prone, and no one gets notified when a high-value prospect submits a form.</p>
                     <div class="impact-label">What It Does</div>
-                    <div class="impact-text">Every lead is validated, synced, and backed up by design.</div>
+                    <div class="impact-text">Every lead is validated, synced to the CRM, and backed up automatically — if a step fails, the team is alerted instead of losing the lead silently.</div>
                     <div class="ideal-for"><span class="label">Ideal for:</span><span class="pill">B2B Companies</span><span class="pill">Service Providers</span><span class="pill">E-commerce</span></div>
                     <div class="project-actions">
                         <a href="case-studies/lead-capture.html" class="case-link"><i class="fas fa-book-open"></i> View Case Study</a>
@@ -185,7 +201,7 @@
                     <div class="problem-label">The Problem</div>
                     <p>Support emails sit unread, causing slow response times and frustrated customers. One person has to read, route, and reply to every ticket — until things get missed.</p>
                     <div class="impact-label">What It Does</div>
-                    <div class="impact-text">Every ticket is classified and routed automatically — no queue, no manual sorting.</div>
+                    <div class="impact-text">Every ticket is classified, given a suggested reply, and routed automatically — with a manual review queue for anything the AI isn't confident about.</div>
                     <div class="ideal-for"><span class="label">Ideal for:</span><span class="pill">SaaS Support Teams</span><span class="pill">E-commerce Support</span><span class="pill">Managed Service Providers</span></div>
                     <div class="project-actions">
                         <a href="case-studies/support-classifier.html" class="case-link"><i class="fas fa-book-open"></i> View Case Study</a>
@@ -273,13 +289,13 @@
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
         }, { threshold: 0.15 });
         if (!prefersReducedMotion) {
-            document.querySelectorAll('.skill-card, .project-card, .cert-main, .contact-card, .hero-meta, .tech-tags span')
+            document.querySelectorAll('.skill-card, .project-card, .cert-main, .contact-card, .hero-meta, .tag-group-list span')
                 .forEach((el, i) => { el.classList.add('fade-up'); el.style.transitionDelay = (i * 0.04) + 's'; observer.observe(el); });
             setTimeout(() => {
                 document.querySelectorAll('.fade-up').forEach(el => { if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('visible'); });
             }, 100);
         } else {
-            document.querySelectorAll('.skill-card, .project-card, .cert-main, .contact-card, .hero-meta, .tech-tags span')
+            document.querySelectorAll('.skill-card, .project-card, .cert-main, .contact-card, .hero-meta, .tag-group-list span')
                 .forEach(el => { el.style.opacity = 1; el.style.transform = 'none'; });
         }
 
