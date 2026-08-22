@@ -42,7 +42,7 @@ body::before {
 .navbar {
     position: fixed; top: 0; left: 0; right: 0; height: var(--nav-height);
     background: rgba(14, 20, 32, 0.85);
-    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-subtle);
     display: flex; align-items: center; justify-content: space-between;
     padding: 0 40px; z-index: 100;
@@ -73,7 +73,7 @@ body::before {
 .hamburger:hover span { background: var(--text-primary); }
 .nav-overlay {
     display: none; position: fixed; top: var(--nav-height); left: 0; right: 0;
-    background: rgba(14, 20, 32, 0.95); backdrop-filter: blur(12px);
+    background: rgba(14, 20, 32, 0.95); backdrop-filter: blur(8px);
     padding: 20px 24px; flex-direction: column; gap: 8px; z-index: 99;
     border-bottom: 1px solid var(--border-subtle);
 }
@@ -361,7 +361,7 @@ section { margin-bottom: 80px; scroll-margin-top: calc(var(--nav-height) + 24px)
     .case-flow { height: 40px; }
     .case-flow text { font-size: 7px !important; }
 }
-.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-up { opacity: 0; transform: translateY(14px); transition: opacity 0.35s ease, transform 0.35s ease; will-change: opacity, transform; }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
 @media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; transform: none; } }
 .mailto-btn {
