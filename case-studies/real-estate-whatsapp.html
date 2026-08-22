@@ -17,6 +17,19 @@
             <p class="case-subtitle">An AI-powered WhatsApp assistant that answers property enquiries, qualifies leads, books viewings, and knows exactly when to hand a conversation over to a human, all without the buyer ever waiting.</p>
 
             <div class="case-block">
+                <h3>Tools &amp; <span class="accent">Integrations</span></h3>
+                <div class="case-tools">
+                    <span class="highlight-tool">n8n</span><span>WhatsApp Business API</span><span>Google Gemini</span>
+                    <span>Airtable</span><span>Google Calendar</span><span>Google Sheets</span><span>JavaScript</span><span>Prompt Engineering</span>
+                </div>
+            </div>
+
+            <div class="case-block">
+                <h3>Workflow <span class="accent">in n8n</span></h3>
+                <img src="../assets/real-estate-whatsapp.png" alt="Real Estate WhatsApp AI Assistant n8n Workflow" style="width:100%; border-radius:var(--radius); border:1px solid var(--border-subtle); background: var(--bg-card);" />
+            </div>
+
+            <div class="case-block">
                 <h3>The <span class="accent">Business Problem</span></h3>
                 <p>Speed decides everything in real estate. A buyer rarely messages just one agent. They message two or three at the same time, and whoever replies first is usually the one who gets the client. It's an uncomfortable truth of the industry, and the obvious fix, hiring someone to be available around the clock, simply isn't realistic for most teams.</p>
                 <div class="matters"><p><strong>Why this matters:</strong> That gap is exactly what this assistant was built to close.</p></div>
@@ -25,32 +38,6 @@
             <div class="case-block">
                 <h3>Solution <span class="accent">Overview</span></h3>
                 <p>Every message on WhatsApp, typed or spoken, gets an instant reply drawn from live property data, not a guess. The assistant scores every lead as it talks to them, books viewings by checking real calendar availability, and hands the conversation to a human the moment a lead turns serious or asks something outside what it knows.</p>
-            </div>
-
-            <div class="case-block">
-                <h3>Workflow <span class="accent">Architecture</span></h3>
-                <svg class="case-flow" viewBox="0 0 900 50" width="100%" height="50">
-                    <line x1="30" y1="25" x2="870" y2="25" stroke="var(--border-subtle)" stroke-width="2"/>
-                    <circle cx="30" cy="25" r="6" fill="var(--accent-gold)"/><circle cx="180" cy="25" r="6" fill="var(--accent-teal)"/>
-                    <circle cx="330" cy="25" r="6" fill="var(--accent-teal)"/><circle cx="480" cy="25" r="6" fill="var(--accent-teal)"/>
-                    <circle cx="630" cy="25" r="6" fill="var(--accent-teal)"/><circle cx="780" cy="25" r="6" fill="var(--accent-teal)"/>
-                    <circle cx="870" cy="25" r="6" fill="var(--accent-gold)"/>
-                    <text x="30" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">WhatsApp</text>
-                    <text x="180" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Transcribe</text>
-                    <text x="330" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Answer</text>
-                    <text x="480" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Qualify</text>
-                    <text x="630" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Book</text>
-                    <text x="780" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Escalate</text>
-                    <text x="870" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Notify</text>
-                </svg>
-            </div>
-
-            <div class="case-block">
-                <h3>Tools &amp; <span class="accent">Integrations</span></h3>
-                <div class="case-tools">
-                    <span class="highlight-tool">n8n</span><span>WhatsApp Business API</span><span>Google Gemini</span>
-                    <span>Airtable</span><span>Google Calendar</span><span>Google Sheets</span><span>JavaScript</span><span>Prompt Engineering</span>
-                </div>
             </div>
 
             <div class="case-block">
@@ -70,11 +57,6 @@
                     <div class="case-error-item"><i class="fas fa-exclamation-triangle"></i><div class="text"><strong>Silent Failure Protection:</strong> If the AI fails to generate a reply for any reason, the customer still receives a response, and a separate alert goes out so the failure never happens quietly in the background.</div></div>
                     <div class="case-error-item"><i class="fas fa-layer-group"></i><div class="text"><strong>Deduplicated Escalation:</strong> If a buyer sends several messages in a row while getting excited about a property, the team gets one clear escalation, not five repeated pings for the same lead.</div></div>
                 </div>
-            </div>
-
-            <div class="case-block">
-                <h3>Workflow <span class="accent">Screenshot</span></h3>
-                <img src="../assets/real-estate-whatsapp.png" alt="Real Estate WhatsApp AI Assistant n8n Workflow" style="width:100%; border-radius:var(--radius); border:1px solid var(--border-subtle); background: var(--bg-card);" />
             </div>
 
             <div class="case-block">
