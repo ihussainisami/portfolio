@@ -17,6 +17,26 @@
             <p class="case-subtitle">An n8n workflow that reads incoming support emails, classifies them with AI, drafts a reply, and routes every ticket to the right team, automatically.</p>
 
             <div class="case-block">
+                <h3>Tools &amp; <span class="accent">Integrations</span></h3>
+                <div class="case-tools">
+                    <span class="highlight-tool">n8n</span><span>Groq AI</span><span>IMAP Email Trigger</span>
+                    <span>Slack</span><span>Gmail</span><span>Airtable</span><span>Google Sheets</span>
+                </div>
+            </div>
+
+            <div class="case-block">
+                <h3>Workflow <span class="accent">in n8n</span></h3>
+                <img src="../assets/support-classifier.png" alt="Support Ticket Classifier n8n Workflow" style="width:100%; border-radius:var(--radius); border:1px solid var(--border-subtle); background: var(--bg-card);" />
+            </div>
+
+            <div class="case-block">
+                <h3>Live <span class="accent">Demo</span></h3>
+                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:var(--radius); border:1px solid var(--border-subtle);">
+                    <iframe src="https://www.loom.com/embed/3c19fa9fae67463ebaf263853e6616c7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
+                </div>
+            </div>
+
+            <div class="case-block">
                 <h3>The <span class="accent">Business Problem</span></h3>
                 <p>Every support email needs to be read, assigned to the right person, replied to, and tracked so nothing is forgotten. One person handles all of it between everything else — leading to slow response times, missed tickets, and frustrated customers.</p>
                 <div class="matters"><p><strong>Why this matters:</strong> Slow support frustrates customers and costs business. A missed ticket can mean a lost customer.</p></div>
@@ -25,32 +45,6 @@
             <div class="case-block">
                 <h3>Solution <span class="accent">Overview</span></h3>
                 <p>Connects to the inbox via an IMAP email trigger. Long emails are trimmed. AI classifies each ticket into Billing/Tech/Sales/Spam, and the workflow routes it to the right team on Slack with full context. A Gmail draft reply is created for human review. Every ticket is logged to Airtable, with a Google Sheets backup if that write fails.</p>
-            </div>
-
-            <div class="case-block">
-                <h3>Workflow <span class="accent">Architecture</span></h3>
-                <svg class="case-flow" viewBox="0 0 900 50" width="100%" height="50">
-                    <line x1="30" y1="25" x2="870" y2="25" stroke="var(--border-subtle)" stroke-width="2"/>
-                    <circle cx="30" cy="25" r="6" fill="var(--accent-gold)"/><circle cx="180" cy="25" r="6" fill="var(--accent-teal)"/>
-                    <circle cx="330" cy="25" r="6" fill="var(--accent-teal)"/><circle cx="480" cy="25" r="6" fill="var(--accent-teal)"/>
-                    <circle cx="630" cy="25" r="6" fill="var(--accent-teal)"/><circle cx="780" cy="25" r="6" fill="var(--accent-gold)"/>
-                    <circle cx="870" cy="25" r="6" fill="var(--accent-gold)"/>
-                    <text x="30" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">IMAP</text>
-                    <text x="180" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Sanitize</text>
-                    <text x="330" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Classify</text>
-                    <text x="480" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Draft</text>
-                    <text x="630" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Route</text>
-                    <text x="780" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Log</text>
-                    <text x="870" y="44" font-size="11" fill="var(--text-muted)" text-anchor="middle">Alert</text>
-                </svg>
-            </div>
-
-            <div class="case-block">
-                <h3>Tools &amp; <span class="accent">Integrations</span></h3>
-                <div class="case-tools">
-                    <span class="highlight-tool">n8n</span><span>Groq AI</span><span>IMAP Email Trigger</span>
-                    <span>Slack</span><span>Gmail</span><span>Airtable</span><span>Google Sheets</span>
-                </div>
             </div>
 
             <div class="case-block">
@@ -73,23 +67,12 @@
             </div>
 
             <div class="case-block">
-                <h3>Workflow <span class="accent">Screenshot</span></h3>
-                <img src="../assets/support-classifier.png" alt="Support Ticket Classifier n8n Workflow" style="width:100%; border-radius:var(--radius); border:1px solid var(--border-subtle); background: var(--bg-card);" />
-            </div>
-
-            <div class="case-block">
-                <h3>Live <span class="accent">Demo</span></h3>
-                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:var(--radius); border:1px solid var(--border-subtle);">
-                    <iframe src="https://www.loom.com/embed/3c19fa9fae67463ebaf263853e6616c7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position:absolute; top:0; left:0; width:100%; height:100%;"></iframe>
-                </div>
-            </div>
-
-            <div class="case-block">
                 <h3>Business <span class="accent">Impact</span></h3>
                 <div class="case-impact"><p>Every ticket is classified and routed automatically — no queue, no manual sorting. Support teams can focus on solving problems instead of triaging emails.</p></div>
             </div>
 
-            <div class="case-github-footer">
+            <div class="case-github-footer" style="display:flex; flex-wrap:wrap; gap:16px;">
+                <a href="https://drive.google.com/file/d/1KkqbkjVM-bhSd9LzLrjN43LUEXN8-nlY/view?usp=sharing" target="_blank"><i class="fas fa-play"></i> Watch Demo</a>
                 <a href="https://github.com/ihussainisami/ai-powered-support-ticket-classifier" target="_blank"><i class="fab fa-github"></i> View Source Code on GitHub</a>
             </div>
         </div>
