@@ -1,0 +1,28 @@
+# Muhammad Sami Ullah
+
+> AI & Workflow Automation Specialist for Real Estate & Property Teams. Builds n8n-based AI automation systems for lead capture, CRM sync, property enquiry handling, and support ticket routing.
+
+Muhammad Sami Ullah is an AI workflow automation specialist based in Sheikhupura, Punjab, Pakistan, working remotely with clients internationally. He builds practical automation systems using n8n, AI models (Groq AI, Google Gemini), and API integrations, with a particular focus on lead handling, CRM automation, and real estate / property enquiry workflows. Every workflow is built with input validation, fallback paths, and human alerts so automation does not fail silently.
+
+## Projects
+
+- [Real Estate WhatsApp AI Assistant](https://ihussainisami.vercel.app/case-studies/real-estate-whatsapp.html): A WhatsApp assistant that answers property enquiries, transcribes voice messages, qualifies leads, and books viewings by checking real calendar availability. Built with n8n, WhatsApp Business API, Google Gemini, Airtable, and Google Calendar. Ideal for estate agents, lettings teams, and property businesses.
+- [Lead Segmentation & AI Scoring](https://ihussainisami.vercel.app/case-studies/lead-segmentation.html): Classifies and scores every inbound lead automatically by domain type and buying intent, so hot leads get immediate follow-up instead of waiting in a queue. Built with n8n and Groq AI.
+- [Lead Capture & CRM Sync](https://ihussainisami.vercel.app/case-studies/lead-capture.html): Validates, syncs, and backs up every website lead automatically, alerting the team if any step fails so no lead is lost silently. Built with n8n, Typeform, Groq AI, and Airtable.
+- [AI-Powered Support Ticket Classifier](https://ihussainisami.vercel.app/case-studies/support-classifier.html): Reads incoming support emails, classifies them by category and urgency, drafts a reply, and routes each ticket to the right team, with low-confidence cases flagged for manual review. Built with n8n, IMAP, Groq AI, and Airtable.
+
+## Skills
+
+- AI Workflow Automation, Lead & CRM Automation, Real Estate Automation, Customer Support Automation
+- Tools: n8n, Groq AI, Google Gemini, APIs, Webhooks, IMAP/Gmail, Slack, WhatsApp Business API, Airtable, Google Sheets, Google Calendar, Typeform
+
+## Contact
+
+- Email: hussainimsami@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/ihussainisami)
+- [GitHub](https://github.com/ihussainisami)
+
+## Optional
+
+- [Full portfolio](https://ihussainisami.vercel.app): About, skills, all project details, and certifications.
+- Certification: IT Automation with Python — Google Professional Certificate (issued August 2025).
