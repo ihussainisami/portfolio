@@ -4,15 +4,13 @@
 
 Muhammad Sami Ullah is an AI workflow automation specialist based in Sheikhupura, Punjab, Pakistan, working remotely with clients internationally. He builds practical automation systems using n8n, AI models (Groq AI, Google Gemini), and API integrations, with a particular focus on lead handling, CRM automation, and real estate / property enquiry workflows. Every workflow is built with input validation, fallback paths, and human alerts so automation does not fail silently.
 
-His Real Estate WhatsApp AI Assistant workflow is reviewed and published as an official template in the n8n template library.
-
 ## Recognition
 
 - Official n8n Template Author — "Qualify Real Estate WhatsApp Leads with Gemini, Airtable, and Google Calendar" approved and published in the official n8n template library: https://n8n.io/workflows/18998
 
 ## Projects
 
-- [Real Estate WhatsApp AI Assistant](https://ihussainisami.vercel.app/case-studies/real-estate-whatsapp.html): A WhatsApp assistant that answers property enquiries, transcribes voice messages, qualifies leads, and books viewings by checking real calendar availability. Also published as an official n8n template. Built with n8n, WhatsApp Business API, Google Gemini, Airtable, and Google Calendar. Ideal for estate agents, lettings teams, and property businesses.
+- [Real Estate WhatsApp AI Assistant](https://ihussainisami.vercel.app/case-studies/real-estate-whatsapp.html): A WhatsApp assistant that answers property enquiries, transcribes voice messages, qualifies leads, and books viewings by checking real calendar availability. Also published as an official n8n template (https://n8n.io/workflows/18998-qualify-real-estate-whatsapp-leads-with-gemini-airtable-and-google-calendar/). Built with n8n, WhatsApp Business API, Google Gemini, Airtable, and Google Calendar. Ideal for estate agents, lettings teams, and property businesses.
 - [Tenant Reference Verification & Follow-Up](https://ihussainisami.vercel.app/case-studies/tenant-reference-verification.html): Automates tenant reference requests, sends the request, chases it with reminders, alerts the agent if 48 hours pass with no reply, and runs a scheduled backup check so no case goes untracked. Built with n8n, Google Sheets, Gmail/SMTP, and native n8n Forms. Ideal for letting agents, property managers, and estate agencies.
 - [Lead Segmentation & AI Scoring](https://ihussainisami.vercel.app/case-studies/lead-segmentation.html): Classifies and scores every inbound lead automatically by domain type and buying intent, so hot leads get immediate follow-up instead of waiting in a queue. Built with n8n and Groq AI.
 - [Lead Capture & CRM Sync](https://ihussainisami.vercel.app/case-studies/lead-capture.html): Validates, syncs, and backs up every website lead automatically, alerting the team if any step fails so no lead is lost silently. Built with n8n, Typeform, Groq AI, and Airtable.
